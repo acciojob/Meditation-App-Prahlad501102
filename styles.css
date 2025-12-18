@@ -1,1 +1,67 @@
 /*  your css code here. If applicable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100vh;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.vid-container video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.player-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.play {
+  width: 60px;
+  fill: white;
+  cursor: pointer;
+}
+
+.time-display {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.sound-picker {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+}
+
+.sound-picker button {
+  border: none;
+  background: none;
+  font-size: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#time-select {
+  position: absolute;
+  left: 20px;
+  top: 30%;
+}
+
+#time-select button {
+  display: block;
+  margin: 10px;
+  padding:
